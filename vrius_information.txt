@@ -1,0 +1,86 @@
+## ✅ **C তে File Project (যেমন Keylogger) করতে যেসব বিষয় লাগবে — সম্পূর্ণ লিস্ট:**
+
+### 1. **C-এর Basic Syntax**
+
+- `#include`, `main()`, `return`, `;`, `{}` – এগুলোর ব্যবহার
+
+### 2. **Variable & Data Types**
+
+- `int`, `char`, `char[]`, `float`, `FILE *`, `DWORD` (Windows-specific)
+
+### 3. **File Handling**
+
+- `FILE *fp;`
+- `fopen()`
+- `fprintf()` / `fscanf()`
+- `fclose()`
+- ফাইল মোড: `"r"`, `"w"`, `"a+"` ইত্যাদি
+- `if (fp == NULL)`
+
+### 4. **Control Structures**
+
+- `if`, `else`, `switch`
+- `for`, `while`, `do while`
+
+### 5. **Arrays**
+
+- যেমন: `last_key_state[0xFF]`
+
+### 6. **Functions**
+
+- `void myFunction()`, `int getKey()`, ইত্যাদি
+- Return value কী এবং কীভাবে কাজ করে
+
+### 7. **Pointers**
+
+- যেমন: `FILE *fp;`, `char *str;`
+
+### 8. **String Functions**
+
+- `strcpy()`, `strlen()`, `strcat()` (key convert করতে কাজে লাগবে)
+
+### 9. **Character Functions**
+
+- `getchar()`, `putchar()`, `toupper()`, `tolower()` ইত্যাদি
+- ASCII Code বোঝা
+
+### 10. **Windows API (Keylogger বা Low-level কাজের জন্য)**
+
+- `GetAsyncKeyState()`
+- `GetKeyState()`
+- `GetForegroundWindow()` (active window নাম পেতে)
+- `GetWindowTextA()` (title বার করতে)
+- `Sleep()` (delay)
+
+### 11. **Header Files**
+
+- `#include <stdio.h>`
+- `#include <windows.h>`
+- `#include <string.h>`
+- `#include <conio.h>` (if needed)
+
+### 12. **Multi-threading (Optional)**
+
+- `CreateThread()`
+- `DWORD WINAPI myFunction(LPVOID lpParameter)`
+
+---
+
+## ✅ Bonus (Advanced Keylogger-এর জন্য):
+
+| বিষয় | দরকার কেন |
+| --- | --- |
+| `SetWindowsHookEx()` | Keyboard Hook লাগাতে |
+| `HINSTANCE`, `LRESULT CALLBACK` | Windows message handle করতে |
+| `fgetc`, `fgets` | ফাইল থেকে পড়তে |
+| `system("cls")` | স্ক্রিন ক্লিয়ার করতে (console-based UI) |
+
+---
+
+## ✅ শিখতে চাইলে আমি তোমাকে এই অর্ডারে শিখাতে পারি:
+
+1. **ফাইল হ্যান্ডলিং (বেসিক)**
+2. **কীভাবে কী-প্রেস ধরে রাখা যায়**
+3. **string ও ASCII বুঝে ফাইল-এ লেখা**
+4. **Windows API দিয়ে `GetAsyncKeyState` ব্যবহার**
+5. **একটা সহজ Keylogger তৈরি**
